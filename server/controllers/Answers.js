@@ -9,9 +9,9 @@ export const postAnswer = async(req,res)=>{
 
       const {noOfAnswers,answerBody,userAnswered,userId}=req.body;
       
-      // console.log(noOfAnswers,answerBody,userAnswered,userId)
+      
       if(!mongoose.Types.ObjectId.isValid(_id)){
-        // console.log("iuhducf")
+        
         return res.status(404).send('question invalid...')
       }
 
